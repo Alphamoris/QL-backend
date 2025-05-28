@@ -65,8 +65,8 @@ A robust RESTful API for managing user subscriptions in a SaaS platform. Built w
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/alphamoris/subscription-service.git
-   cd subscription-service
+   git clone https://github.com/alphamoris/QL-backend.git
+   cd QL-backend
    ```
 
 2. Install dependencies
