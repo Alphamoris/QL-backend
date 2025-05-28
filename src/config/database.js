@@ -6,7 +6,9 @@ mongoose.Promise = global.Promise;
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(config.database.uri, {});
+    const conn = await mongoose.connect(config.database.uri, {
+      serverSelectionTimeoutMS: 5000
+    });
 
     logger.info(`MongoDB Connected: ${conn.connection.host}`);
     return conn;

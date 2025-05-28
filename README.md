@@ -65,7 +65,7 @@ A robust RESTful API for managing user subscriptions in a SaaS platform. Built w
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/subscription-service.git
+   git clone https://github.com/alphamoris/subscription-service.git
    cd subscription-service
    ```
 
@@ -107,7 +107,7 @@ A robust RESTful API for managing user subscriptions in a SaaS platform. Built w
 - name: String (required, unique)
 - description: String (required)
 - price: Number (required)
-- currency: String (enum: 'USD', 'EUR', 'GBP', 'INR', default: 'USD')
+- currency: String (enum: 'USD', 'EUR', 'GBP', 'INR', default: 'INR')
 - duration: Number (required, min: 1)
 - durationUnit: String (enum: 'day', 'month', 'year', default: 'day')
 - features: [String]
@@ -144,10 +144,4 @@ A robust RESTful API for managing user subscriptions in a SaaS platform. Built w
 - Multiple subscription tiers per user
 - Analytics dashboard
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-ISC 
+ 

@@ -4,7 +4,7 @@ const createPlanSchema = Joi.object({
   name: Joi.string().min(2).max(100).required(),
   description: Joi.string().min(10).required(),
   price: Joi.number().min(0).required(),
-  currency: Joi.string().valid('USD', 'EUR', 'GBP', 'INR').default('USD'),
+  currency: Joi.string().valid('USD', 'EUR', 'GBP', 'INR').default('INR'),
   duration: Joi.number().integer().min(1).required(),
   durationUnit: Joi.string().valid('day', 'month', 'year').default('day'),
   features: Joi.array().items(Joi.string()).default([]),

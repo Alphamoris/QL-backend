@@ -18,7 +18,7 @@ router.use('/subscriptions', subscriptionRoutes);
 
 // Handle undefined routes
 router.all('*', (req, res, next) => {
-  next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+  next(new AppError(`Cannot find ${req.originalUrl} on this server!`, 404));
 });
 
 module.exports = router; 
